@@ -7,7 +7,6 @@ public class ArrayTaskList{
         Task[] task1 = new Task[count + 1];
         System.arraycopy(this.task, 0, task1, 0, count);
         task1[count] = task;
-        this.task = null;
         this.task = task1;
         task1=null;
     }
